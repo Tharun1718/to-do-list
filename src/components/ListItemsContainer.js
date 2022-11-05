@@ -1,8 +1,8 @@
 import React from 'react';
 
-function ListItems({text}){
+function ListItems({text,deleteItems,id}){
     return(
-        <div>
+        <div onClick={()=>{deleteItems({id})}}>
           <li>{text}</li>
         </div>
     )
